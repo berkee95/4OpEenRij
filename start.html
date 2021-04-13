@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Vier op een rij</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="bordStyle.css">
+    <script src="bordlogica.js" defer></script> 
+</head>
+
+<body>
+<h1> Vier op een rij </h1>
+<h2> Vul een naam en gewenste kleur in! Als er geen invoer gekozen is worden de standaard waarden gebruikt! </h2>
+<div id = "speler1Form">
+    <form>
+        <label>Speler 1's naam: </label>
+        <input type="text" id="speler1naam" name="speler1naam" placeholder="De 4 op een rij koning">
+        <label>Speler 1's kleur: </label>
+        <input type="text" id="speler1kleur" name="speler1kleur" placeholder="green">
+    </form>
+</div>
+<div id = "speler2Form">
+    <form>
+        <label>Speler 2's naam: </label>
+        <input type="text" id="speler2naam" name="speler2naam" placeholder="Ik ben beter">
+        <label>Speler 2's kleur: </label>
+        <input type="text" id="speler2kleur" name="speler2kleur" placeholder="yellow">
+    </form>
+</div>
+<div id = "beginSpel">
+    <form action = "bord.html">
+        <input type="submit" value="Start spel" onclick = "startSpel(document.getElementById('speler1naam').value, document.getElementById('speler1kleur').value, document.getElementById('speler2naam').value, document.getElementById('speler2kleur').value)">
+    </form>
+</div>  
+</body>
+</html>

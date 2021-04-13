@@ -1,0 +1,51 @@
+body {
+    background-color: khaki;
+}
+
+#speler1Form{
+  margin-top: 3vw;
+  text-align: center;
+}
+
+#speler2Form, #nieuwSpel{
+  margin-top: 1vw;
+  text-align: center;
+}
+
+#beginSpel{
+  margin-top: 1vw;
+  text-align: center;
+}
+
+h1, h2{
+    text-align: center;
+    margin-top: 3vw;
+}
+
+/* Verberg kleur overflow */
+table{
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    margin-top: 3vw;
+    }
+
+/* Creeër het speelbord */
+td, th {
+  border: 0.1vw solid red;
+  padding: 1vw;
+  position: relative;
+  }
+
+/* Verander achtergrond kleur van kolom, waarover gehoverd wordt */
+.hoverEffect:hover::after { 
+  background-color: cyan;
+  filter: opacity(60%);
+  content: '';  
+  height: 340vw;    
+  left: 0;
+  position: absolute;  
+  top: -12vw;
+  width: 100%;
+  z-index: -1;        
+  }
